@@ -1,35 +1,22 @@
 // src/components/App/App.tsx
 import React from 'react';
-import ToDoList from '../ToDoList/ToDoList';
+import Children from '../ChildrenToDo/Children';
+import { AppProps } from '../../types/AppProps'; 
+import './App.css';
 
-interface AppProps {
-    items: { id: number; title: string; }[];
-    title: string;
-    setTitle: (value: string) => void;
-    search: string;
-    setSearch: (value: string) => void;
-    addItem: () => void;
-    removeItem: (id: number) => void;
-}
-
-const App: React.FC<AppProps> = ({ items, title, setTitle, search, setSearch, addItem, removeItem }) => {
+const App: React.FC<AppProps> = ({ items, removeItem, addItem, title, setTitle, search, setSearch }) => {
     return (
-        <div className="container">
-            <h1>Car Salon</h1>
-            <input
-                type="text"
-                value={title}
-                onChange={e => setTitle(e.target.value)}
-                placeholder="Add new car"
+        <div>
+            <h1>ToDo</h1>
+            <Children 
+                items={items}
+                onRemove={removeItem} 
+                addItem={addItem}
+                title={title}
+                setTitle={setTitle}
+                search={search}
+                setSearch={setSearch}
             />
-            <button onClick={addItem}>Add</button>
-            <input
-                type="text"
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-                placeholder="Search car"
-            />
-            <ToDoList items={items} onRemove={removeItem} />
         </div>
     );
 };
