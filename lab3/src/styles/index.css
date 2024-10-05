@@ -1,0 +1,33 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto; /* Центрування таблиці */
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  color: #000; /* Колір тексту для всіх клітинок */
+  font-weight: bold;
+}
+
+.table th {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.table tr {
+  background-color: #f9faf9; /* Один фон для всіх рядків */
+}
+
+.table tr:hover {
+  background-color: #021a26; /* Фон рядка при наведенні */
+  color: #6ace06; /* Колір тексту при наведенні */
+}
+
+.table tr:hover td {
+  background-color: #0c0d0d; /* Фон для всіх клітинок */
+  color: #07fa02; /* Колір тексту для всіх клітинок */
+}
