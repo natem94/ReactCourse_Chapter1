@@ -4,9 +4,7 @@ import App from '../App/App';
 
 const Container: React.FC = () => {
     const [items, setItems] = useState<{ id: number; title: string; }[]>([
-        { id: 1, title: 'Minich Vitaliy' },
-        { id: 2, title: 'Ivan Ivanov' },
-        { id: 3, title: 'Mykola Vorobej' },
+        { id: 1, title: 'ЛиляБоля ПИЗДАБОЛКА' },
     ]);
     const [title, setTitle] = useState('');
     const [search, setSearch] = useState('');
