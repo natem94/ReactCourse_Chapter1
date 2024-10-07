@@ -1,0 +1,88 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #394039;
+}
+
+h1 {
+  text-align: center;
+  color: #f3eded;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgb(11, 11, 11);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 5px 0;
+  width: calc(50% - 22px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #f52601;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Додаємо анімацію */
+}
+
+button:hover {
+  background-color: #47f109;
+  transform: scale(1.05); /* Невелике збільшення при наведенні */
+}
+
+/* Стилі для кнопки видалення */
+.remove-btn {
+  background-color: #d9534f; /* Червоний колір для кнопки видалення */
+}
+
+.remove-btn:hover {
+  background-color: #c9302c; /* Темніший червоний при наведенні */
+  transform: scale(1.05); /* Невелике збільшення при наведенні */
+}
+
+/* Таблиця стилі */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  color: #000; /* колір тексту для всіх клітинок */
+  font-weight: bold;
+}
+
+.table th {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.table tr {
+  background-color: #f9faf9; /* один фон для всіх рядків */
+}
+
+.table tr:hover {
+  background-color: #021a26; /* фон рядка при наведенні */
+  color: #6ace06; /* колір тексту при наведенні */
+}
+
+.table tr:hover td {
+  background-color: #0c0d0d; /* фон для всіх клітинок */
+  color: #07fa02; /* колір тексту для всіх клітинок */
+}
