@@ -1,0 +1,19 @@
+/* src/components/Loader/Loader.css */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: rgba(16, 11, 11, 0.8); 
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 999; 
+}
+
+.loader-text {
+  color: white; 
+  font-size: 24px; 
+  text-align: center; 
+}

@@ -1,0 +1,109 @@
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 0 5px;
+  width: 408px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.add-button {
+  padding: 10px 15px;
+  background-color: #f52601;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-button:hover {
+  background-color: #47f109;
+  transform: scale(1.05);
+}
+
+.search-input {
+  width: 500px; 
+  padding: 5px;
+  margin: 10px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #f52601;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Додаємо анімацію */
+}
+
+button:hover {
+  background-color: #47f109;
+  transform: scale(1.05); /* Невелике збільшення при наведенні */
+}
+
+/* Стилі для кнопки видалення */
+.remove-btn {
+  background-color: #d9534f; /* Червоний колір для кнопки видалення */
+}
+
+.remove-btn:hover {
+  background-color: #c9302c; /* Темніший червоний при наведенні */
+  transform: scale(1.05); /* Невелике збільшення при наведенні */
+}
+
+/* Таблиця стилі */
+.table {
+  width: 100%; /* Встановлюємо ширину на 100% */
+  max-width: 700px; /* Встановлюємо максимальну ширину, якщо потрібно */
+  border-collapse: collapse;
+  margin: 20px auto; /* Центрування таблиці */
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  color: #000; /* Колір тексту для всіх клітинок */
+  font-weight: bold;
+  min-width: 150px; /* Мінімальна ширина для стовпців */
+}
+
+.table .actions {
+  min-width: 100px; /* Мінімальна ширина для стовпця Actions */
+  width: 100px; /* Фіксована ширина */
+  text-align: center; /* Вирівнювання кнопок по центру */
+}
+
+.table th {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.table tr {
+  background-color: #f9faf9; /* Один фон для всіх рядків */
+}
+
+.table tr:hover {
+  background-color: #021a26; /* Фон рядка при наведенні */
+  color: #6ace06; /* Колір тексту при наведенні */
+}
+
+.table tr:hover td {
+  background-color: #0c0d0d; /* Фон для всіх клітинок */
+  color: #07fa02; /* Колір тексту для всіх клітинок */
+}
