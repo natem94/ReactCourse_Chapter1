@@ -15,7 +15,7 @@ const useGetAllToDo = () => {
       getData();
   }, []);
 
-  return { data, isLoading };
+  return { setData, data ,isLoading };
 };
 
 export default useGetAllToDo;

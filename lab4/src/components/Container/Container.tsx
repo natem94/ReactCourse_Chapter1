@@ -1,19 +1,13 @@
 // src/components/Container/Container.tsx
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import App from '../App/App';
 import useGetAllToDo from '../../hooks/useGetAllToDo'; 
 
+
 const Container: React.FC = () => {
-    const { data, isLoading } = useGetAllToDo(); 
+    const { data: items, setData: setItems, isLoading } = useGetAllToDo()
     const [search, setSearch] = useState('');
     const [title, setTitle] = useState('');
-    const [items, setItems] = useState<{ id: number; title: string }[]>([]); 
-
-    useEffect(() => {
-        if (data.length > 0) {
-            setItems(data); 
-        }
-    }, [data]);
 
     const addItem = (newTitle: string) => {
         const newItem = {
