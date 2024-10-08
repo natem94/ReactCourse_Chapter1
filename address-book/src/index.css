@@ -1,0 +1,85 @@
+/* Загальні стилі для сайту */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ead708; 
+}
+
+h1 {
+  text-align: center;
+  color: #333; 
+  margin: 20px 0;
+}
+
+
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* Білий фон */
+  border: 1px solid #ddd; /* Світло-сірий контур */
+  border-radius: 8px; /* Закруглені кути */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666; /* Світло-сірий колір тексту */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Світло-сірий контур */
+  border-radius: 4px; /* Закруглені кути */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007bff; /* Блакитний фон */
+  color: white; /* Білий колір тексту */
+  border: none; /* Без контуру */
+  border-radius: 4px; /* Закруглені кути */
+  cursor: pointer; /* Курсор у вигляді вказівника */
+}
+
+button:hover {
+  background-color: #0056b3; /* Темніший блакитний при наведенні */
+}
+
+/* Стилі для таблиці */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Об'єднання кордонів */
+  margin: 20px auto;
+  background-color: #fff; /* Білий фон */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd; /* Світло-сірий контур */
+  text-align: left; /* Вирівнювання тексту вліво */
+}
+
+th {
+  background-color: #007bff; /* Блакитний фон для заголовків */
+  color: white; /* Білий колір тексту */
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Світло-сірий фон для парних рядків */
+}
+
+tr:hover {
+  background-color: #e0e0e0; /* Світло-сірий при наведенні */
+}
+
+/* Стилі для повідомлень про помилки */
+span {
+  color: red; /* Червоний колір для помилок */
+  font-size: 0.9em; /* Менший розмір шрифту для повідомлень */
+}
